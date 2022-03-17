@@ -1,0 +1,28 @@
+Sentence:  A small number of Western Australian bananas have been sent to the eastern states after a sharp drop in demand.
+Source:  doc1
+Probability of sentence in document 1:  -0.00475644229727108
+Probability of sentence in document 2:  -0.005330267905080958
+Prediction: doc1
+
+
+Sentence:  The long paddock is getting crowded around Narrabri, in north-west New South Wales, where 25,000 head of livestock are searching for feed on the stock routes.
+Source:  doc1
+Probability of sentence in document 1:  -0.007087161810616019
+Probability of sentence in document 2:  -0.008027412713934104
+Prediction: doc1
+
+
+Sentence:  Dr Bernd Irlenbusch of the London School of Economics adds he was surprised with the extent of punishment.
+Source:  doc2
+Probability of sentence in document 1:  -0.005187803697151702
+Probability of sentence in document 2:  -0.004856329680936102
+Prediction: doc2
+
+
+Sentence:  Australians are in a prime position to see Mercury moving across the Sun this week, an event they won't be able to see again for another 26 years.
+Source:  doc2
+Probability of sentence in document 1:  -0.007440017796785426
+Probability of sentence in document 2:  -0.007097496697448799
+Prediction: doc2
+
+

@@ -1,0 +1,87 @@
+Compare the statistics of the two different corpora – What are the differences in
+the most common unigrams between the two? What interestingthings do you see about the bigrams?
+
+    The most common unigrams in both documents were words like 'the'. In both documents, the 10 most frequent words
+    are 'the', 'of', 'to', 'a', 'and', 'in', 'that', 'says', 'is', and 'for', (different order, but same words).
+    If you look further there are some interesting frequent words. Below are some frequent words I
+    thought were interesting from each document.
+
+        Rural:
+            28. australia 1139
+            31. farmers 1085
+            36. water 907
+            40. growers 817
+            42. industry 801
+            43. south 782
+            45. government 748
+
+        Science:
+            37. researchers 1008
+            42. research 899
+            47. university 854
+            53. study 966
+            54. scientists 731
+            63. dr. 630
+
+    I think the frequent bigrams are more interesting. Below are some examples.
+
+        Rural:
+            10. per cent 555
+            16. the federal 388
+            18. new south 375
+            19. south wales 374
+            21. the australian 343
+            25. federal government 284
+            39. the national 212 
+
+        Science:
+            11. the researchers 529
+            14. university of 489
+            16. the university 414
+            22. the journal 334
+            31. the study 283
+            45. researchers say 219
+            52. the scientists
+
+    The most common words are pretty obvious. The rural news talks about farming while the scientific news talks about research
+    and universities. What I found interesting was how much more the rural news talks about Australia. Words like "Australia",
+    "federal", and "government" are very common. It would make sense that rural news would cover more about domestic issues,
+    so phrases about the Australian federal government would more likely come from a rural news article. The scientific news
+    talks more about research, scientists, and journals.
+
+    Several of the common bigrams are clearly parts of what are also common trigrams. In the rural document, for example,
+    'new south' and 'south wales' combine as 'new south wales', a state in Australia with strong agricultural production.
+    Similarly, 'the federal' and 'federal government' combine as 'the federal government'. In the scientific article,
+    'the university' and 'university of' combine as 'the university of'.
+
+    I also found it interesting that 'per cent' occurred so often in the rural news document but not in the scientific news
+    document. (A quick cmd+f revealed that '%', 'percent', and 'per cent' occur about 430 times total in the science doc,
+    which is still less than 'per cent' in the rural doc.)
+
+
+Choose a sentence (fragment) from your first corpus and a sentence (fragment) of the same length from your second corpus.
+Using Add-1 Smoothing, compute the probabilities of the 2 different sentences on each corpus.
+What do you find?  Explain the results.
+
+    Sentences:
+        Rural:
+            "A small number of Western Australian bananas have been sent to the eastern states after a sharp drop in demand."
+            
+            "The long paddock is getting crowded around Narrabri, in north-west New South Wales,
+            where 25,000 head of livestock are searching for feed on the stock routes."
+
+        Scientific:
+            "Dr Bernd Irlenbusch of the London School of Economics adds he was surprised with the extent of punishment."
+
+            "Australians are in a prime position to see Mercury moving across the Sun this week, an event they won't be
+            able to see again for another 26 years."
+
+
+    I chose 4 different sentences to test, and my program classified them all correctly. I chose two pairs of sentences of similar
+    length where both pairs had a sentence from both documents. From the rural news document, I chose one sentence about
+    Australian bananas and one about a paddock in New South Wales, both of which had significantly higher probabilities of
+    being in the rural document. From the scientific news document, my first sentence was about a researcher at the London 
+    school of economics, which was easily classified as from the science document. I thought I could trick my program with
+    the second sentence from the scientific document because of 1) how vaguely scientific it is, and 2) how frequently Australia
+    is mentioned in the rural news document, but it ended up finding the scentence slightly more probable in the scientific
+    news article.
